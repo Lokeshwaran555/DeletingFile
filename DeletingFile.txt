@@ -1,0 +1,12 @@
+it('DeletingFile', function(){
+
+    cy.visit('http://dev.devmobo.com/')
+    cy.get('#email').type('lokzz05000@gmail.com')
+    cy.get('#password').type('Lokesh@52510')
+    cy.get('#loginButton').click()
+    cy.get(':nth-child(4) > .nav-link').click()
+    
+    cy.get(':nth-child(2) > :nth-child(3) > .dropdown > #navbarDropdownMenuLink > .fa').click()
+    cy.get('tbody > :nth-child(2) > :nth-child(3) > .dropdown > .dropdown-menu > :nth-child(2)').click()
+
+})    
